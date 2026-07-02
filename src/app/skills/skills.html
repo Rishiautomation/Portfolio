@@ -1,0 +1,79 @@
+<section class="skills-page reveal delay-1">
+  <div class="page-heading reveal delay-1">
+    <p class="eyebrow">Technical toolkit</p>
+    <h1>Skills shaped around dependable automation and clear quality signals.</h1>
+    <p>
+      A focused SDET stack for designing tests, validating APIs, tracking defects, and supporting faster releases.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+    <article>
+      <h2>Automation</h2>
+      <ul>
+        <li>Selenium WebDriver</li>
+        <li>TestNG / JUnit basics</li>
+        <li>Page Object Model</li>
+        <li>Regression suite design</li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>API & Tools</h2>
+      <ul>
+        <li>Postman collections</li>
+        <li>REST API validation</li>
+        <li>Newman reporting</li>
+        <li>JSON payload checks</li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>Engineering Workflow</h2>
+      <ul>
+        <li>Git and GitHub</li>
+        <li>Agile ceremonies</li>
+        <li>Defect lifecycle</li>
+        <li>CI/CD quality gates</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="process-band">
+    <span>Requirement analysis</span>
+    <span>Test planning</span>
+    <span>Automation</span>
+    <span>Reporting</span>
+    <span>Release support</span>
+  </div>
+</section>
+
+<section class="tech-stack reveal delay-2">
+  <div class="section-heading">
+    <p class="eyebrow">Tech Stack</p>
+    <h2>Technologies I Work With</h2>
+    <p>Automation, development, CI/CD, and testing tools I use to build reliable software workflows.</p>
+  </div>
+
+  <div class="tech-marquee" aria-label="Technologies I work with">
+    <div class="slide-track">
+      @for (tech of technologies; track tech.name) {
+        <div class="tech-card">
+          <img [src]="tech.icon" [alt]="tech.name">
+          <span>{{ tech.name }}</span>
+        </div>
+      }
+      @for (tech of technologies; track tech.name + '-copy') {
+        <div class="tech-card" aria-hidden="true">
+          <img [src]="tech.icon" [alt]="tech.name">
+          <span>{{ tech.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<footer class="footer-container">
+  <div class="footer-divider"></div>
+  <span>Designed by Rishikesh</span>
+</footer>
